@@ -23,7 +23,7 @@
                 {{ __('Создать') }}
             </button>
 
-            <button id="view-text" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+            <button data-toggle="tooltip" data-placement="top" title="Предпросмотр" id="view-text" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
                 <x-icons.eye/>
             </button>
         </div>

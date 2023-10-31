@@ -4,11 +4,11 @@
         @csrf
 
         <div class="col-sm-3">
-            <label for="nameInput">Name</label>
+            <label for="nameInput">Имя</label>
             <input type="name" name="name" class="form-control" id="nameInput">
         </div>
         <div class="col-sm-3">
-            <label for="password">Password</label>
+            <label for="password">Пароль</label>
             <input type="password" name="password" class="form-control" id="password">
             @error('name')
                 <div class="alert alert-danger">{{ $message }}</div>
@@ -21,7 +21,7 @@
                 <input id="remember_me" type="checkbox"
                        class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                        name="remember">
-                <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
+                <span class="ml-2 text-sm text-gray-600">{{ __('Запомнить меня') }}</span>
             </label>
         </div>
 
@@ -34,7 +34,7 @@
             @endif
 
             <button class="btn btn-success">
-                {{ __('Log in') }}
+                {{ __('Войти') }}
             </button>
         </div>
     </form>

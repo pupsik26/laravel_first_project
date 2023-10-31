@@ -4,9 +4,15 @@
     @foreach($texts as $idTitle => $items)
         <div data-target-title-id="{{$idTitle}}">
             <x-list :items="$items"></x-list>
-            <x-icons.pdf/>
-            <x-icons.world/>
-            <x-icons.zip/>
+            <span data-toggle="tooltip" data-placement="top" title="Скачать в PDF">
+                <x-icons.pdf/>
+            </span>
+            <span data-toggle="tooltip" data-placement="top" title="Скачать в DOCX">
+                <x-icons.world/>
+            </span>
+            <span data-toggle="tooltip" data-placement="top" title="Скачать ZIP">
+                <x-icons.zip/>
+            </span>
         </div>
         <hr>
     @endforeach

@@ -1,5 +1,5 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between h-16" style="display: flex;
+    <div class="flex justify-between mb-5" style="display: flex;
                                                   justify-content: space-between;
                                                   align-items: center;">
         <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
@@ -32,10 +32,10 @@
                 <a class="btn btn-danger" href="{{route('logout')}}"
                    onclick="event.preventDefault();
                                         this.closest('form').submit();">
-                    {{ __('Log Out') }}
+                    {{ __('Выйти') }}
                 </a>
             </form>
         </div>
     </div>
 </div>
-
+<hr>
