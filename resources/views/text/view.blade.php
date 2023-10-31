@@ -1,0 +1,1 @@
+<x-list :items="$items"/>
