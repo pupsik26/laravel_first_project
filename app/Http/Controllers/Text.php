@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Helpers\TextHelper;
 use App\Models\Title;
 use Illuminate\Http\Request;
 
@@ -18,16 +19,8 @@ class Text extends Controller
 
     public function view(Request $request)
     {
-        $texts = $request->all('text');
-        $title = $request->get('title');
-        $items = [$title => []];
-
-        foreach ($texts as $text) {
-            $items[$title] += $text;
-        }
-
         return view('text.view', [
-            'items' => $items
+            'items' => TextHelper::getArrayTextByView($request->all('text'), $request->get('title'))
         ])->render();
     }
 

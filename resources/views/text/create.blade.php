@@ -22,10 +22,12 @@
             <button class="btn btn-success mt-1">
                 {{ __('Создать') }}
             </button>
+            <span data-toggle="tooltip" data-placement="top" title="Предпросмотр">
+                <button id="view-text" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+                    <x-icons.eye/>
+                </button>
+            </span>
 
-            <button data-toggle="tooltip" data-placement="top" title="Предпросмотр" id="view-text" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
-                <x-icons.eye/>
-            </button>
         </div>
     </form>
     <x-modal.modal/>

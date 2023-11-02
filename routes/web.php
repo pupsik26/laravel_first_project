@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\Document;
 use App\Http\Controllers\Text;
 use Illuminate\Support\Facades\Route;
 
@@ -43,6 +44,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('view', [Text::class, 'view'])
         ->name('view-text');
+
+    Route::get('download/{titleId}/{type}', [Document::class, 'download'])
+        ->name('download');
 
 });
 

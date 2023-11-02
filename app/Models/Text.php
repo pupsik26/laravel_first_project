@@ -4,9 +4,31 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\Auth;
 
+/**
+ * App\Models\Text
+ *
+ * @property int $id
+ * @property string $text Текст
+ * @property int $user_id Кто создал
+ * @property int $title_id Название текста
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \App\Models\Title|null $title
+ * @property-read \App\Models\User|null $user
+ * @method static \Database\Factories\TextFactory factory($count = null, $state = [])
+ * @method static \Illuminate\Database\Eloquent\Builder|Text newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Text newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Text query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Text whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Text whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Text whereText($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Text whereTitleId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Text whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Text whereUserId($value)
+ * @mixin \Eloquent
+ */
 class Text extends Model
 {
     use HasFactory;

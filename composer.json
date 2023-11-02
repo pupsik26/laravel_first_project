@@ -6,12 +6,15 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "ext-zip": "*",
+        "barryvdh/laravel-dompdf": "^2.0",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/breeze": "1.9.2",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "ext-zip": "*"
+        "phpoffice/phpword": "*",
+        "ext-dom": "*"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.13",
