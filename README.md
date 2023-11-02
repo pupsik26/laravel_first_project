@@ -1,6 +1,7 @@
 ## Laravel Project
 
-- git clone --ignore-platform-reqs
+- git clone 
+- composer install --ignore-platform-reqs
 - php artisan migrate
 - php artisan db:seed
 - php artisan serve
